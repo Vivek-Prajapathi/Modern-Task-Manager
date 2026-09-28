@@ -1,7 +1,7 @@
 
 ## Modern Task Manager
 
-A modern and minimal Task Manager Web App built with HTML, CSS, and JavaScript.  
+A modern and minimal Task Manager Web App built with HTML, CSS, and TypeScript.  
 It allows users to create, manage, and delete tasks with a clean user interface.  
 All tasks are stored in local storage, so they remain even after refreshing the page.  
 
@@ -16,12 +16,25 @@ All tasks are stored in local storage, so they remain even after refreshing the 
 modern-task-manager/
 │── index.html
 │── style.css
-│── script.js
+│── src/main.ts
+│── dist/main.js   (build output, committed so GitHub Pages can serve it)
+│── tsconfig.json
 
 ## Live Demo
 [View on GitHub Pages](https://your-username.github.io/modern-task-manager/)  
 
 *(Replace `your-username` with your GitHub username once Pages is enabled)*  
+
+---
+
+## Development
+```bash
+npm install
+npm run build     # compile src/main.ts -> dist/main.js
+npm run watch     # rebuild on change
+npm run typecheck # type check without emitting
+```
+Then open `index.html` in your browser.
 
 ---
 
@@ -36,7 +49,7 @@ modern-task-manager/
 ## Tech Stack
 - HTML5 – Structure  
 - CSS3 – Styling and layout  
-- JavaScript (ES6) – Functionality and local storage  
+- TypeScript – Functionality and local storage (compiled to ES2020)  
 
 ---
 

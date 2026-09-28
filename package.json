@@ -1,0 +1,15 @@
+{
+  "name": "modern-task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A modern and minimal Task Manager Web App built with HTML, CSS, and TypeScript.",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
